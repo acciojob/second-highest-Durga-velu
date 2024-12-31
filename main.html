@@ -13,12 +13,11 @@
 			 return "-infinity";	 
 		 }			
 			//Write your code here
-			
-			arr.sort();
-		let min=Math.min(arr);
+				arr.sort();
+		let min=arr[0];
 			let largeNum=arr[arr.length-1];
 			let secLarge=arr[arr.length-2];
-			if(secLarge=== && secLarge===largeNum){
+			if(secLarge===min && secLarge===largeNum){
 				return "-infinity";
 			}
 			return secLarge;
