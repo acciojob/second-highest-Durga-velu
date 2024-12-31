@@ -18,7 +18,9 @@
 				newArr.push[arr[i]];
 				
 			}
-			if(arr===newArr){
+			if([...arr]===[...newArr]){
+				const allEqual = arr => arr.every(val => val === arr[0]);
+
 				return "-infinity";
 			}
 			arr.sort((a,b) =>(a-b));
