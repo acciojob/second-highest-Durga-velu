@@ -13,27 +13,25 @@
 			 return "-infinity";	 
 		 }			
 			//Write your code here
-				arr.sort();
-		let min=arr[0];
-			let largeNum=arr[arr.length-1];
-			let secLarge=arr[arr.length-2];
-			if(secLarge===min && secLarge===largeNum){
-				return "-infinity";
-			}
-			return secLarge;
-
-		/*	let  largeNum= (secondLarge =Math.min(...arr));
+		
+			
+			let  largeNum= secondLarge =Math.min(...arr);
 			for(let i=0;i<arr.length;i++){
 				if(arr[i]>largeNum){
 					secondLarge=largeNum;
 					largeNum=arr[i];
 				}
-                else if(arr[i]>secondLarge){
+                else if(arr[i]>secondLarge && arr[i] !==largeNum){
 					secondLarge=arr[i];
 				}
 			}
-			*/
+			
+          if(secondLarge===Math.min(...arr)&&secondLarge ===largeNum)
+		  {
+			  return "-infinity";
+		  }
 
+			return secondLarge;
 			
 		/*	else if(arr.length>=2){
 				
@@ -51,6 +49,16 @@
 			return arr[1];*/
 
 
+
+
+
+
+
+
+
+
+
+			
 			
 		}
 		function Main() {
