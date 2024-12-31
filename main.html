@@ -16,10 +16,11 @@
 			let result;
 		for (const element of arr) {
         if (element === array[0]) {
-            result= "-infinity";
-			break;
+           return "-infinity";
+
+			
 			}	
-		return result;
+		break;
 		}	
 			arr.sort((a,b) =>(a-b));
 			return arr[arr.length-2];
