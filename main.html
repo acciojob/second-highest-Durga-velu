@@ -13,17 +13,21 @@
 			 return "-infinity";	 
 		 }			
 			//Write your code here
+			
+			let newArr[]=arr.sort((a,b) =>(a-b));
+			//return arr[arr.length-2];  
 
-			let res="-infinity"
-		for (const element of arr) {
-        if (element === arr[0]) {
-            return res;
-						}	
-		
+			let large=newArr[arr.length-1];
+			for(let i=newArr.length-2;i>=0;i--){
+				if(large!==newArr[i]){
+					console.log(newArr[i]);
+					break;
+				}
+				
 			}
-			arr.sort((a,b) =>(a-b));
-			return arr[arr.length-2];
-			/*else if(arr.length>=2){
+
+			
+		/*	else if(arr.length>=2){
 				
 			for(let i=1;i<arr.length;i++){
 				for(let j=0;j<arr.length-1;j++){
@@ -37,15 +41,27 @@
 				
 			}
 			return arr[1];*/
+
+
+
+
+
+
+
+
+
+
+
+			
 			
 		}
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			var n = ("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
-			alert(secondHighest(arr));
+			(secondHighest(arr));
 		}
 		Main();
 	</script>
