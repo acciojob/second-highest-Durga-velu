@@ -13,18 +13,23 @@
 			 return "-infinity";	 
 		 }			
 			//Write your code here
-			
-			let newArr[]=arr.sort((a,b) =>(a-b));
-			//return arr[arr.length-2];  
+			/*
+			arr.sort((a,b) =>(a-b));
+			return arr[arr.length-2];  */
 
-			let large=newArr[arr.length-1];
-			for(let i=newArr.length-2;i>=0;i--){
-				if(large!==newArr[i]){
-					console.log(newArr[i]);
-					break;
+			let secondLarge=-infinity;
+			let largeNum=-infinity;
+			for(const val of arr){
+				if(val>largenum){
+					secondLarge=largeNum;
+					largeNum=val;
 				}
-				
+				if(val>largeNum && val> secondLarge){
+					secondLarge=val
+				}
+				}
 			}
+		
 
 			
 		/*	else if(arr.length>=2){
