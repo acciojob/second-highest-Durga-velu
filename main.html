@@ -11,6 +11,7 @@
 		function secondHighest(arr) {
 			 if(arr.length < 2 ){
 			 return "-infinity";	 
+				 
 		 }			
 			//Write your code here
 				
@@ -24,11 +25,7 @@
 					secondLarge=arr[i];
 				}
 			}
-			
-          if(secondLarge===Math.min(...arr)&&secondLarge ===largeNum)
-		  {
-			  return "-infinity";
-		  }
+	
 
 			return secondLarge;
 			
